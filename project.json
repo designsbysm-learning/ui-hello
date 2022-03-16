@@ -1,0 +1,17 @@
+{
+  "root": "libs/ui-hello",
+  "projectType": "application",
+  "sourceRoot": "libs/ui-hello",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:run-script",
+      "options": {
+        "script": "build"
+      },
+      "outputs": [
+        "lib"
+      ]
+    }
+  },
+  "tags": []
+}

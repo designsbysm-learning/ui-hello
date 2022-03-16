@@ -1,0 +1,42 @@
+{
+  "name": "@embryhealth/ui-hello",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.tsx",
+  "types": "lib/typescript/index.d.ts",
+  "main1": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "tsc": "tsc -p .",
+    "build": "bob build",
+    "prepare": "bob build"
+  },
+  "peerDependencies": {
+    "react": "17.0.1",
+    "react-native": "0.64.3"
+  },
+  "devDependencies": {
+    "@types/react": "16.14.5",
+    "@types/react-native": "^0.63.51",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-react": "^7.29.3",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "react-native-builder-bob": "^0.18.1",
+    "typescript": "^4.2.3"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}
